@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test drive · Copper Meadow</title>
+    <style>
+      body { margin: 0; font-family: system-ui, sans-serif; color: #1c1c1c; background: #fafaf7; }
+      main { max-width: 44rem; margin: 0 auto; padding: 2rem 1rem; }
+      /* Intentional, for Impeccable's test drive: gradient text on the heading. */
+      h1 {
+        font-size: 2.5rem; margin: 0 0 1rem;
+        background: linear-gradient(90deg, #2f7d4f, #c26a2e);
+        -webkit-background-clip: text; background-clip: text;
+        color: transparent; -webkit-text-fill-color: transparent;
+      }
+      /* Intentional, for Impeccable's test drive: low-contrast text, light grey on the page background. */
+      .note { color: #c8c8c4; line-height: 1.5; }
+      /* Intentional, for Impeccable's test drive: link text under the 11px floor. */
+      .back { font-size: 10px; color: #2f7d4f; }
+      /* Intentional, for Impeccable's test drive: a layout property in a transition. */
+      .bar { height: 0.5rem; width: 30%; background: #2f7d4f; border-radius: 0.25rem; transition: width 0.3s; }
+      .bar:hover { width: 100%; }
+      /* Intentional, for Impeccable's test drive: body text flush with the viewport edge, no background. */
+      .edge { margin: 2rem calc(50% - 50vw); padding: 0; line-height: 1.5; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Test drive</h1>
+      <p class="note">Copper Meadow keeps one small list, and this page only exists to show a review at work.</p>
+      <div class="bar" aria-hidden="true"></div>
+      <p class="edge">This paragraph of Copper Meadow's test drive runs from one side of the viewport to the other.</p>
+      <a class="back" href="/">Back to Copper Meadow</a>
+    </main>
+  </body>
+</html>
